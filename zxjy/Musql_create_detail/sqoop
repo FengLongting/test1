@@ -1,0 +1,9 @@
+-- 全量导出:
+sqoop export \
+--connect "jdbc:mysql://192.168.88.80/zxjy?useUnicode=true&characterEncoding=utf-8" \
+--username root \
+--table zxjy_result \
+--password '123456' \
+--hcatalog-database edu_dm \
+--hcatalog-table zx_dm \
+-m 1
